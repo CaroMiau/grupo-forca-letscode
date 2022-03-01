@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+}
+
+.xp {
+    display: flex;
+    justify-content: flex-end;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    margin: 5px 0;
+    padding: 2px 1px;
+    border-radius: 3px;
+}
+
+.user-icon {
+    font-size: 24px;
+}
+
+.container {
+    background: crimson;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px 0px;
+    width: 450px;
+    margin: auto;
+}
+
+.forca {
+    fill: transparent;
+    stroke: black;
+    stroke-width: 10px;
+    stroke-linecap: round;
+}
+
+.partes-corpo {
+    fill: transparent;
+    stroke: black;
+    stroke-width: 10px;
+    stroke-linecap: round;
+}
+
+.palavra-secreta {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
+
+.letras {
+    border-bottom: 2px solid black;
+    margin-left: 3px;
+    margin-right: 3px;
+    text-align: center;
+    padding: 2px;
+}
+
+.teclado {
+    margin-top: 10px;
+}
+
+.teclas {
+    text-align: center;
+}
+
+.teclas button {
+    height: 18px;
+    width: 28px;
+    margin-top: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: black;
+    font-weight: bolder;
+    box-shadow: 0px 0px 3px rgb(0, 0, 0);
+    font-size: 11px;
+}
+
+.teclas button:hover{
+    transform: scale(1.25);
+}
+
+.frase-final {
+    margin-top: 10px;
+}
