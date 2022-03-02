@@ -108,53 +108,53 @@ const elementos = [
         xp: 5
     },
     elemento021 = {
-        nome: "beatles",
-        categoria: "musíca",
+        nome: "BEATLES",
+        categoria: "MUSICA",
         xp: 5
     },
     elemento022 = {
-        nome: "metallica",
-        categoria: "musíca",
+        nome: "METALLICA",
+        categoria: "MUSICA",
         xp: 5
     },
     elemento023 = {
-        nome: "cream",
-        categoria: "musíca",
+        nome: "CREAM",
+        categoria: "MUSICA",
         xp: 5
     },
     elemento024 = {
-        nome: "misfits",
-        categoria: "musíca",
+        nome: "MISFITS",
+        categoria: "MUSICA",
         xp: 5
     },
     elemento025 = {
-        nome: "painkiller",
-        categoria: "musíca",
+        nome: "PAINKILLER",
+        categoria: "MUSICA",
         xp: 5
     },
     elemento026 = {
-        nome: "slayer",
-        categoria: "musíca",
+        nome: "SLAYER",
+        categoria: "MUSICA",
         xp: 5
     },
     elemento027 = {
-        nome: "anthrax",
-        categoria: "musíca",
+        nome: "ANTHRAX",
+        categoria: "MUSICA",
         xp: 5
     },
     elemento028 = {
-        nome: "pantera",
-        categoria: "musíca",
+        nome: "PANTERA",
+        categoria: "MUSICA",
         xp: 5
     },
     elemento029 = {
-        nome: "ramones",
-        categoria: "musíca",
+        nome: "RAMONES",
+        categoria: "MUSICA",
         xp: 5
     },
     elemento030 = {
-        nome: "mutantes",
-        categoria: "musíca",
+        nome: "MUTANTES",
+        categoria: "MUSICA",
         xp: 5
     }
 ]
@@ -164,9 +164,6 @@ function randomizarPalavraSecreta() {
 
     categoriaPalavraSecreta = elementos[indice].categoria;
     palavraSecretaRandomizada = elementos[indice].nome;
-
-    console.log(categoriaPalavraSecreta);
-    console.log(palavraSecretaRandomizada);
 }
 randomizarPalavraSecreta();
 
@@ -192,7 +189,7 @@ function verificarLetra(letra) {
     if (tent > 0) {
         mudarEstilo("tecla-" + letra);
         comparaListas(letra);
-        
+    }
 }
 
 function comparaListas(letra) {
@@ -208,10 +205,19 @@ function comparaListas(letra) {
             }
         }
     }
+
     let vitoria = true;
     for (i = 0; palavraSecretaRandomizada.length; i++) {
-        
+        if (palavraSecretaRandomizada[i] != listaDinamica[i]) {
+            vitoria = false;
+        }
     }
+
+    if(vitoria == true)
+   {
+       // mensagem que ganhou
+       tentativas = 0;
+   }
 }
 
 function mudarEstilo(teclas) {
